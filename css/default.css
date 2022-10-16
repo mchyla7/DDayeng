@@ -1,0 +1,251 @@
+                /** Začátek tmavého motivu **/
+
+@media (prefers-color-scheme: dark) {
+        
+    /* Barva celé stránky */
+    body {
+        margin: 0;
+        padding: 0;
+        background: #272822; /* Originál: #fdc9d1 */
+        font-size: 12px;
+        overflow: auto
+    }
+
+    #mainDiv {
+        width: 100%;
+        height: 100%
+    }
+
+    #loveHeart {
+        float: left;
+        width: 670px;
+        height: 620px;
+        position: relative;
+    }
+
+    #garden {
+        width: 100%;
+        height: 100%
+    }
+
+    #elapseClock {
+        text-align: right;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+        /* Text v srdíčku */
+    #words {
+        font-family: "sans-serif";
+        width: 500px;
+        font-size: 24px;
+        color: #CF8177 /* Originál: #666 */
+    }
+
+    #messages {
+        display: none
+    }
+
+    #elapseClock .digit {
+        font-family: "digit";
+        font-size: 36px
+    }
+
+    #loveu {
+        padding: 5px;
+        font-size: 22px;
+        margin-top: 80px;
+        margin-right: 120px;
+        text-align: right;
+        display: none
+    }
+
+    #loveu .signature {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    #clickSound {
+        display: none
+    }
+        /*  Kod  */
+    #code {
+        float: left;
+        width: 440px;
+        margin-top: 60px !important;
+        height: 400px;
+        color: #E3F8E1; /* Originál: #333 */
+        font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+        font-size: 12px
+    }
+
+    /* String - jmeno */
+
+    #code .string {
+        color: #A163E3 /* Originál: #2a36ff */
+    }
+
+    /* Klíčové slova - True */
+
+    #code .keyword {
+        color: #FEEA00;     /* ORIGINÁL: #7f0055 */
+        font-weight: bold
+    }
+
+    #code .placeholder {
+        margin-left: 15px
+    }
+
+    #code .space {
+        margin-left: 7px
+    }
+        /* Hastagy - Comenty */
+    #code .comments {
+        color: #52B763      /* Originál: #3f7f5f */
+    }
+
+    #copyright {
+        margin-top: 40px;
+        text-align: center;
+        width: 100%;
+        color: #666
+    }
+
+    #errorMsg {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        position: absolute;
+        top: 100px;
+        left: 0
+    }
+
+    #copyright a {
+        color: #666
+    }
+}
+
+                /** Začátek světlého motivu **/
+
+@media (prefers-color-scheme: light) {
+
+    /* Barva celé stránky */
+    body {
+        margin: 0;
+        padding: 0;
+        background: #F3DDCE;  /* Originál: #fdc9d1 */
+        font-size: 12px;
+        overflow: auto
+    }
+
+    #mainDiv {
+        width: 100%;
+        height: 100%
+    }
+
+    #loveHeart {
+        float: left;
+        width: 670px;
+        height: 620px;
+        position: relative;
+    }
+
+    #garden {
+        width: 100%;
+        height: 100%
+    }
+
+    #elapseClock {
+        text-align: right;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+        /* Text v srdíčku */
+    #words {
+        font-family: "sans-serif";
+        width: 500px;
+        font-size: 24px;
+        color: #ED6A5A /* Originál: #666 */
+    }
+
+    #messages {
+        display: none
+    }
+
+    #elapseClock .digit {
+        font-family: "digit";
+        font-size: 36px
+    }
+
+    #loveu {
+        padding: 5px;
+        font-size: 22px;
+        margin-top: 80px;
+        margin-right: 120px;
+        text-align: right;
+        display: none
+    }
+
+    #loveu .signature {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    #clickSound {
+        display: none
+    }
+        /*  Kod  */
+    #code {
+        float: left;
+        width: 440px;
+        margin-top: 60px !important;
+        height: 400px;
+        color: #9A475E; /* Originál: #333 */
+        font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+        font-size: 12px
+    }
+
+    #code .string {
+        color: #2a36ff /* Originál: #2a36ff */
+    }
+
+        /* Klíčové slova - True */
+
+    #code .keyword {
+        color: #F56416;     /* ORIGINÁL: #7f0055 */
+        font-weight: bold
+    }
+
+    #code .placeholder {
+        margin-left: 15px
+    }
+
+    #code .space {
+        margin-left: 7px
+    }
+        /* Hastagy - Comenty */
+    #code .comments {
+        color: #078834       /* Originál: #3f7f5f */
+    }
+
+    #copyright {
+        margin-top: 40px;
+        text-align: center;
+        width: 100%;
+        color: #666
+    }
+
+    #errorMsg {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        position: absolute;
+        top: 100px;
+        left: 0
+    }
+
+    #copyright a {
+        color: #666
+    }
+}

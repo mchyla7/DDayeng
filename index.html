@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Our Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body>
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">##</span><br/>
+			<span class="comments"># Jsem programátor,</span><br/>
+			<span class="comments"># a Taky jsem napsal tenhle kod k zvláštním událostem</span><br/>
+			<span class="comments">##</span><br/>
+			i = Boy(<span class="string">"Martin"</span>);<br/>
+			u = Girl(<span class="string">"Katka"</span>);<br/>
+			<span class="comments"># Květen 7, 2022, zahlédl jsme tě na biřmování. </span><br/>
+			i.see(u)<br/>
+			<span class="comments"># Června 30, 2022 jsme si tě pořádně všiml.</span><br/>
+			i.meet(u)<br/>
+			<span class="comments"># A nasledně Červenec 2, 2022 byl nás první večerní talk.</span><br/>
+			i.speak_to(u)<br/>
+			<span class="comments"># Dala 3 možnosti. </span><br/>
+			u.give_idea(to.be.with.you=<span class="keyword">True</span>)<br/>
+			<span class="comments"># Září 28, 2022, Ses stala mojí přítelkyní.</span><br/>
+			i.accept(offer_to_be_your_bf)<br/>
+			<span class="comments"># Od té doby jsme spolu šťastni každý den.</span><br/>
+			happy(u, i)<br/>
+			<span class="comments"># Dokážeme nějak spolu fungovat i když studujeme.</span><br/>
+			studying(u, i)<br/>
+			<span class="comments"># Užívali jsme si vaření.</span><br/>
+			cooking(u, i)<br/>
+			<span class="comments"># Užíváme si spolu jakékoliv akce.</span><br/>
+			celebrating(u, i, happy=<span class="keyword">True</span>)<br/>
+			<span class="comments"># Sem tam jsme se na něčem neshodli.</span><br/>
+			conflicts(u, i, sometimes=<span class="keyword">True</span>)<br/>
+			<span class="comments"># Ale stále jsme spolu.</span><br/>
+			u.with(i) <br/>
+			i.with(u) <br/>
+			<span class="comments"># Jsi to nejlepší co mně v životě potkalo.</span><br/>
+			while <span class="keyword">True</span>:<br/>
+			<span class="placeholder"></span><span class="keyword">if</span> u.with(i):<br/>
+			<span class="placeholder"></span><span class="placeholder"></span>u = everythink<br/>
+			<span class="placeholder"></span><span class="keyword">else</span>else<br/>
+			<span class="placeholder"></span><span class="placeholder"></span>everythink = u<br/>
+			<span class="comments"># Až si tě vezmu, budeme nejšťastnější pár na světě.</span><br/>
+			i.merry(u, in_future=<span class="keyword">True</span>)<br/>
+			i.live_happily_forever_with(u)<br/>
+			<span class="comments"># Miluju tě.</span><br/>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Kači, Zamiloval jsem se do tebe...
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					Love you navždy a napořád.<br/>
+					<div class="signature">- Martin</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script type="text/javascript">
+	var offsetX = $("#loveHeart").width() / 2;
+	var offsetY = $("#loveHeart").height() / 2 - 55;
+	var together = new Date();
+	together.setFullYear(2022, 08, 28);
+	together.setHours(13);
+	together.setMinutes(15);
+	together.setSeconds(31);
+	together.setMilliseconds(12.2);  /* Bcs her birthdays */
+
+	if (!document.createElement('canvas').getContext) {
+		var msg = document.createElement("div");
+		msg.id = "errorMsg";
+		msg.innerHTML = "Prohlížeč nepodporuje HTML5!<br/>Doporučeno použít Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+		document.body.appendChild(msg);
+		$("#code").css("display", "none")
+		$("#copyright").css("position", "absolute");
+		$("#copyright").css("bottom", "10px");
+		document.execCommand("stop");
+	} else {
+		setTimeout(function () {
+			startHeartAnimation();
+		}, 5000);
+
+		timeElapse(together);
+		setInterval(function () {
+			timeElapse(together);
+		}, 500);
+
+		adjustCodePosition();
+		$("#code").typewriter();
+	}
+</script>
+</body>
+</html>
+
